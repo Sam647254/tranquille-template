@@ -1,0 +1,103 @@
+$neĝo: #e0e6f8;
+$revo: #0b173b;
+
+@import url("https://use.typekit.net/abp2bnr.css");
+
+html {
+   background-color: $revo;
+   color: $neĝo;
+}
+
+body {
+   font-family: niveau-grotesk, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: europa, sans-serif;
+}
+
+h1.main-title {
+   text-transform: uppercase;
+   letter-spacing: 0.15em;
+   text-align: center;
+}
+
+a {
+   text-decoration: none;
+   text-shadow: $neĝo 0 0 6px;
+   transition: text-shadow 200ms linear;
+   color: $neĝo;
+
+   &:visited {
+      color: $neĝo;
+   }
+
+   &:hover {
+      text-shadow: $neĝo 0 0 12px;
+   }
+}
+
+nav {
+   text-align: center;
+
+   ul {
+      list-style-type: none;
+      display: table;
+      table-layout: fixed;
+      max-width: 1000px;
+      width: 100%;
+      border: 2px solid $neĝo;
+      padding: 0 2px;
+      margin: 0 auto;
+
+      & > li {
+         position: relative;
+         display: table-cell;
+         padding: 4px 2px;
+
+         a {
+            display: block;
+            text-shadow: none;
+            padding-bottom: 2px;
+            transition: background-color 200ms linear, color 200ms linear;
+
+            &:hover {
+               background-color: $neĝo;
+               color: $revo;
+            }
+         }
+      }
+   }
+}
+
+.content {
+   max-width: 900px;
+   margin: 0 auto;
+}
+
+.text {
+   width: 600px;
+   margin: 0 auto;
+}
+
+.footer {
+   margin-top: 40px;
+   text-align: center;
+   font-size: 0.9em;
+}
+
+.center {
+   text-align: center;
+}
+
+select {
+   background-color: transparent;
+   border: $neĝo solid 2px;
+   padding: 2px;
+   color: $neĝo;
+   font-family: niveau-grotesk, sans-serif;
+
+   option {
+      background-color: $revo;
+   }
+}
